@@ -94,7 +94,7 @@ print(check_list)
 # 7. Create a collection of dates (date like ‘1/11/2018’ with weekday like ‘Monday’), print total number of date, dates for non-working days (Saturday, Sunday)
 
 dates = {
-     "Sunday"     : '1/11/2018',
+      "Sunday"     : '1/11/2018',
       "Monday"    : '2/11/2018',
       "Tuesday"   : '3/11/2018',
       "Wednesday" : '4/11/2018',
@@ -119,7 +119,7 @@ print(non_working2)
 # 8. Create a collection of filenames with their size, print how many files are greater than 15Mb, how many filenames start from ‘a’ letter, increase size of the file which name ends with ‘.txt’
 
 filenames = {
-     "any.psd"        : "30MB",
+     "any.psd"       : "30MB",
      "second.py"     : "25MB",
      "third.cpp"     : "20MB",
      "anything.html" : "15MB",
