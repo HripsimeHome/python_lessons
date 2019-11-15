@@ -15,9 +15,9 @@ print(books)
 
 
 # 3. Create 2 collections storing company employees,
-# get number of employees working in both companies,
-# get collection of employees with same name from both of groups,
-# input several names and find if they work in one of companies, print results
+# get number of employees working in both companies, +
+# get collection of employees with same name from both of groups, +
+# input several names and find if they work in one of companies, print results -
 
 employees1 = {"Kevin", "Mellisa", "Jonathan", "William"}
 employees2 = {"William", "Sophia", "Mike", "Isabella"}
@@ -53,12 +53,50 @@ print("The number of employees working in both companies is: ", len(all_employee
 # both_watchers = movies1 & movies2
 
 
+# 5. Input a collection of employee names with their salary,
+# calculate average salary in organisation,
+# get the employee with highest salary,
+# get the employee with lowest salary print results.
+
+employees = {}
+for i in range(3):
+    print("Please, enter the employee's name: ")
+    name = input()
+    print("Please, enter the employee's salary: ")
+    salary = int(input())
+    employees[name] = salary
+
+names = list(employees.keys())
+salary = list(employees.values())
+
+maximum_salary = max(salary)
+i = salary.index(maximum_salary)
+print("Employee with highest salary is  -", names[i])
+
+minimum_salary = min(salary)
+i = salary.index(minimum_salary)
+print("Employee with lowest salary is - ", names[i])
+
+average_salary =sum(salary) / len(salary)
+print(average_salary)
+
+
 # 6. Calculate multiplication of elements starting from some inputted number up to other inputted number
 
 num1 = int(input("Please, input the first number: "))
 num2 = int(input("Please, input the second number: "))
 sum = num1*num2
 print("Result of multiplication is: ", sum)
+
+# Input 7 numbers, get the numbers from beginning to the number which is less than number on previous position
+
+nums = []
+print("Please, enter 7 numbers: ")
+for i in range(7):
+    num = int(input())
+    nums.append(num)
+    check_nums = [num for num in nums if num < i]
+print(check_nums)
 
 
 # 8. Define collection of songs, print indexes for songs starting with ‘s’
@@ -88,9 +126,9 @@ calc = num3*num4
 print(f"Result of multiplication is: {calc}")
 
 
-
 # 11. Input collection of numbers, find last number which square root is less than 26, print it
 # napolovinu
+
 # import math
 # square_root = input("Please, enter the numbers: ")
 # sum = 0
@@ -98,6 +136,11 @@ print(f"Result of multiplication is: {calc}")
 #     sum += i
 #     if i < (math.sqrt(25)):
 #         break
-#     print(sum)
-
+# print(sum)
 #print (math.sqrt(25))
+
+nums = int(input())
+for i in reversed(range(10)):
+    if i*i < nums:
+        print(i)
+        break
