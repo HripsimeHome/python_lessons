@@ -125,6 +125,14 @@ num4 = int(input("Please, input the number: "))
 calc = num3*num4
 print(f"Result of multiplication is: {calc}")
 
+# U doski
+# list_num = int(input())
+# result = 1
+# for i in range(list_num):
+#     result *= i
+# print(result)
+
+
 
 # 11. Input collection of numbers, find last number which square root is less than 26, print it
 # napolovinu
@@ -144,3 +152,15 @@ for i in reversed(range(10)):
     if i*i < nums:
         print(i)
         break
+
+
+# U doski
+import math
+nums = []
+counter = int(input())
+for i in range(counter):
+    nums.append(int(input()))
+    for num in reversed(nums):
+        if math.sqrt(num) < 26:
+            print(num)
+            break
