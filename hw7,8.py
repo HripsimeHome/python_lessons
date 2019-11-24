@@ -147,11 +147,11 @@ print(f"Result of multiplication is: {calc}")
 # print(sum)
 #print (math.sqrt(25))
 
-nums = int(input())
-for i in reversed(range(10)):
-    if i*i < nums:
-        print(i)
-        break
+# nums = int(input())
+# for i in reversed(range(10)):
+#     if i*i < nums:
+#         print(i)
+#         break
 
 
 # U doski
@@ -164,3 +164,22 @@ for i in range(counter):
         if math.sqrt(num) < 26:
             print(num)
             break
+
+
+
+import math
+nums = []
+print("Enter the number for the counter")
+counter = int(input())
+
+print("Enter the numbers")
+#  input from console numbers into the collection-list
+for i in range(counter):
+    num_inp = int(input())
+    nums.append(num_inp)
+
+#  find last number which square root is less than 26
+for num in reversed(nums):
+    if math.sqrt(num) < 26:
+        print(num)
+        break

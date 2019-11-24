@@ -33,15 +33,16 @@
 # Version with functions
 
 numbers = ()
-count = 0
+
 print("Please, input 3 numbers: ")
 def number_coounter(number):
-    for i in number:
+    count = 0
+    for i in number():
         num = int(input())
-        if i > 10:
+        if num > 10:
             count +=1
             print(count)
-number_coounter(number)
+# number_coounter(number)
 
 
 
@@ -49,15 +50,15 @@ number_coounter(number)
 # generate a new collection of odd numbers (create a function), print results
 
 
-digits = ()
-#input
-def positiv_devide(digs):
-    sum = 0
-    # input#input
-    for i in digs:
-        if i < 0 and i %6 == 0:
-            sum += 1
-    return sum
-print(positiv_devide(i))
+# digits = ()
+# #input
+# def positiv_devide(digs):
+#     sum = 0
+#     # input#input
+#     for i in digs:
+#         if i < 0 and i %6 == 0:
+#             sum += 1
+#     return sum
+# print(positiv_devide(i))
 
 
