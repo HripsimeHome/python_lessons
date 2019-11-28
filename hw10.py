@@ -41,4 +41,4 @@ print(functools.reduce(lambda x, y : x-y, numbers))
 
 # Created packages (in package folder). For package homework nested packages are calculations, loops;
 # for product package nested packages are lambda_example, reduce_example
-# call them from use_package.py from root
+# call them from use_package.py from root and use that examples from math.py, for_loop.py, while_loop.py, lambda_function.py, reduce.py
