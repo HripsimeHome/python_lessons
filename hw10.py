@@ -36,3 +36,9 @@ import functools
 numbers = [500, 200, 50]
 print(functools.reduce(lambda x, y : x-y, numbers))
 
+
+# 7. Create several packages (some nested), several modules inside, call them from outside and use
+
+# Created packages (in package folder). For package homework nested packages are calculations, loops;
+# for product package nested packages are lambda_example, reduce_example
+# call them from use_package.py from root
