@@ -1,3 +1,32 @@
+# 1. Create several functions store them inside variables for handling collection of movie names using lambdas
+
+def film1(filmname1):
+    return filmname1
+a=film1("Jestoki romans")
+
+def film2(filmname2):
+    return filmname2
+b=film2("Shinel")
+
+def film3(filmname3):
+    return filmname3
+c=film3("Spisok Shinglera")
+
+result_collection = print(lambda x, y, z: x+y+z, a + ",", b + ",", c)
+
+
+# 2. Create a function with 2 parameters (function, number),
+# call the function with some specific function described with lambda and integer inputted from console
+
+def calculate (number, action):
+    if number > 0:
+        print(action(number))
+    else:
+        print("Please, enter a positive number!")
+input_number = int(input("Please, enter a number: "))
+calculate(input_number, lambda num: num +2-5)
+
+
 # 3. Define some collection of names and get the collection of their first 3 characters using map(), print the result
 
 names = ['Melissa', 'Stiven','Mike', 'Robert']

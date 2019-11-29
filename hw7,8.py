@@ -42,7 +42,7 @@ print("The number of employees working in both companies is: ", len(all_employee
 
 # Sprosit' na uroke
 
-# movies1 = {"Moskva slezam ne verit", "Shinel", "Jestoki romams"}
+# movies1 = {"Moskva slezam ne verit", "Shinel", "Jestoki romans"}
 # movies2 = {"Spisok Shinglera", "V jazze tol'ko devushki"}
 
 # person1 = "Stiven"
