@@ -4,7 +4,8 @@ nums = [15, 22, 31, 36, 44, 60, 73]
 check_nums = [i for i in nums if i % 2 == 1 or i % 6 == 0]
 print(check_nums)
 
-# 2. Create a collection of 6 names inputed from console , generate a new collection selecting only the names starting from ‘A’ and print it
+# 2. Create a collection of 6 names inputed from console ,
+# generate a new collection selecting only the names starting from ‘A’ and print it
 
 names = []
 print("Please, enter 6 names, also started with letter A: ")
@@ -75,7 +76,8 @@ for name, country in visitors.items():
   print(name, " : " + country)
 
 
-# 6. Create a collection of students with their scores and input them from console, remove students with score less than 40 and print final collection
+# 6. Create a collection of students with their scores and input them from console,
+# remove students with score less than 40 and print final collection
 
 students = {}
 for i in range(2):
@@ -87,7 +89,8 @@ for i in list(students):
         students.pop(i)
 print(students)
 
-# 7. Create a collection of dates (date like ‘1/11/2018’ with weekday like ‘Monday’), print total number of date, dates for non-working days (Saturday, Sunday)
+# 7. Create a collection of dates (date like ‘1/11/2018’ with weekday like ‘Monday’),
+# print total number of date, dates for non-working days (Saturday, Sunday)
 
 dates = {
       "Sunday"    : '1/11/2018',
@@ -112,7 +115,8 @@ print(non_working1)
 print(non_working2)
 
 
-# 8. Create a collection of filenames with their size, print how many files are greater than 15Mb, how many filenames start from ‘a’ letter, increase size of the file which name ends with ‘.txt’
+# 8. Create a collection of filenames with their size, print how many files are greater than 15Mb,
+# how many filenames start from ‘a’ letter, increase size of the file which name ends with ‘.txt’
 
 filenames = {
      "any.psd"       : "30MB",
