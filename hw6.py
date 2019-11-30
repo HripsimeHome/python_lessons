@@ -90,8 +90,7 @@ print(students)
 # 7. Create a collection of dates (date like ‘1/11/2018’ with weekday like ‘Monday’), print total number of date, dates for non-working days (Saturday, Sunday)
 
 dates = {
-      "Sunday"
-      : '1/11/2018',
+      "Sunday"    : '1/11/2018',
       "Monday"    : '2/11/2018',
       "Tuesday"   : '3/11/2018',
       "Wednesday" : '4/11/2018',
