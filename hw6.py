@@ -1,26 +1,18 @@
-
 # 1. Define a collection of numbers, generate a new collection selecting only odd or dividable by 6 numbers and print it
 
 nums = [15, 22, 31, 36, 44, 60, 73]
 check_nums = [i for i in nums if i % 2 == 1 or i % 6 == 0]
 print(check_nums)
 
-
 # 2. Create a collection of 6 names inputed from console , generate a new collection selecting only the names starting from ‘A’ and print it
-names = ["Duane", "Sam", "Anatoli", "Bob", "Afanasi", "Kevin"]
-check_names = [name for name in names if name.startswith('A')]
+
+names = []
+print("Please, enter 6 names, also started with letter A: ")
+for i in range(6):
+    name = input()
+    names.append(name)
+check_names = [name for name in names if name.startswith("A")]
 print(check_names)
-
-#2. with testing input for question
-
-# names = []
-# input_names = str(input("Please, enter the name: "))
-# for name in input_names:
-#     if name[0] == 'A':
-#         names.append(name)
-#         # names.sort()
-#     print(name)
-
 
 # 3. Define a collection of color names, generate a new collection selecting only color name having more than 1 ‘o’ and print it
 
@@ -43,8 +35,8 @@ for i in list(pets.values()):
         sum += 1
 print(sum)
 
-
-# 5. Create a collection for storing hotel visitors (name, country), input several visitors from console, print how many visitors are now in hotel, what is their country, what is their name
+# 5. Create a collection for storing hotel visitors (name, country), input several visitors from console,
+# print how many visitors are now in hotel, what is their country, what is their name
 
 visitors = {
     "Stanislav" : "Russia",
@@ -52,49 +44,54 @@ visitors = {
     "Kevin"  : "USA",
     "Duane"  : "Australia"
 }
+for i in range(2):
+    name = input("Please, enter the visitor name: ")
+    country = input("Please, enter the visitor country: ")
+    visitors[name] = country
+print(visitors)
 
 # Case 1 - print how many visitors are now in hotel
 sum = 0
 for i in list(visitors.keys()):
     sum += 1
 print(sum)
+
 #or
 print(len(visitors))
 
 # Case 2 - what is their country
-
+print("Their countries are: ")
 for name in visitors.values():
   print(name)
 
-
 # Case 3 - what is their name
-
+print("Their names are: ")
 for country in visitors.keys():
   print(country)
 
 # or
-
+print("Their names and countries are: ")
 for name, country in visitors.items():
-  print(name, country)
+  print(name, " : " + country)
 
 
 # 6. Create a collection of students with their scores and input them from console, remove students with score less than 40 and print final collection
 
-students = {
-    "Student1" : 100,
-    "Student2" : 85,
-    "Student3" : 70,
-    "Student4" : 30,
-    "Student5" : 20
-}
-check_list = [i for i in list(students.values()) if i>40]
-print(check_list)
-
+students = {}
+for i in range(2):
+    name = input("Please, enter the student's name: ")
+    score = int(input("Please, enter the student's score: "))
+    students[name] = score
+for i in list(students):
+    if students[i] < 40:
+        students.pop(i)
+print(students)
 
 # 7. Create a collection of dates (date like ‘1/11/2018’ with weekday like ‘Monday’), print total number of date, dates for non-working days (Saturday, Sunday)
 
 dates = {
-      "Sunday"     : '1/11/2018',
+      "Sunday"
+      : '1/11/2018',
       "Monday"    : '2/11/2018',
       "Tuesday"   : '3/11/2018',
       "Wednesday" : '4/11/2018',
