@@ -147,6 +147,48 @@ def position_calculate(name, position):
 print("There are", position_calculate(employee, "Engineer"), "Engineers.")
 
 
+# 4 . Create a collection of hotel rooms (room number, state (booked or not), type (econom, business, lux)),
+# calculate how many rooms are booked (create a function), calculate how many numbers of different types by default lux numbers are free (create a function),
+# generate a collection of econom numbers, print results
+
+rooms = {'room1': {'number': '1', 'state': 'booked', 'type': 'econom'},
+         'room2': {'number': '2', 'state': 'booked', 'type': 'econom'},
+         'room3': {'number': '3', 'state': 'not_booked', 'type': 'econom'},
+         'room4': {'number': '4', 'state': 'booked', 'type': 'business'},
+         'room5': {'number': '5', 'state': 'not_booked', 'type': 'business'},
+         'room6': {'number': '6', 'state': 'booked', 'type': 'lux'},
+         'room7': {'number': '7', 'state': 'not_booked', 'type': 'lux'}}
+
+# calculate how many rooms are booked
+def booked(rooms):
+    count = 0
+    for room in rooms:
+        if rooms[room]['state'] == 'booked':
+            count += 1
+    return count
+print("There are", booked(rooms), "booked rooms")
+
+
+# calculate how many numbers of different types by default lux numbers are free
+def free_rooms(rooms, free='not_booked'):
+    count = 0
+    for room in rooms:
+        if rooms[room]['state'] == free:
+            count +=1
+    return count
+print(free_rooms(rooms))
+
+
+# generate a collection of econom numbers
+def econom_rooms(rooms):
+    econom_list = []
+    for room in rooms:
+        if rooms[room]['type'] == 'econom':
+            econom_list.append(room)
+    return econom_list
+print(econom_rooms(rooms))
+
+
 # 5. Create a collection of company names, generate a collection of company names ending with ‘s’ (create a function),
 # generate a collection of company names containing different symbols combination by default double ‘o’ (create a function), print results
 
