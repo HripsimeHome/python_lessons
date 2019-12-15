@@ -1,42 +1,40 @@
 # 1. Create constant collection of numbers, print first size of the collection and elements on even positions
 
-# nums = (2, 8, 79, 96, 118, 125)
-# print(len(nums))
-# even_nums = [num for num in nums if num % 2 == 0]
-# print(even_nums)
-
+nums = (2, 8, 79, 96, 118, 125)
+print(len(nums))
+even_nums = [num for num in nums if num % 2 == 0]
+print(even_nums)
 
 # 2. Create a collection for storing unique book names, add some of them from console and print results
 
-# books = {"The Old Man and the Sea", "Brothers Karamazov", "Hamlet"}
-# input_books = input("Please, enter some book names: ")
-# books.add(input_books)
-# print(books)
-
+books = {"The Old Man and the Sea", "Brothers Karamazov", "Hamlet"}
+input_books = input("Please, enter some book names: ")
+books.add(input_books)
+print(books)
 
 # 3. Create 2 collections storing company employees,
 # get number of employees working in both companies,
 # get collection of employees with same name from both of groups,
 # input several names and find if they work in one of companies, print results -
 
-# employees1 = {"Kevin", "Mellisa", "Mike", "William"}
-# employees2 = {"William", "Sophia", "Mike", "Isabella"}
-#
-# all_employees = employees1 | employees2
-# print("The number of employees working in both companies is: ", len(all_employees))
-#
-# same_name = employees1 & employees2
-# print(same_name, " - This are the same names from both of groups.")
-#
-# oneof_companies = []
-# print("Please, enter the names: ")
-# for i in range(6): # len(all_employees))
-#     input_name = input()
-#     oneof_companies.append(input_name)
-#     if input_name == employees1 - employees2:
-#         print("They work in one of companies")
-#     else:
-#         print("No")
+employees1 = {"Kevin", "Mellisa", "Mike", "William"}
+employees2 = {"William", "Sophia", "Mike", "Isabella"}
+
+all_employees = employees1 | employees2
+print("The number of employees working in both companies is: ", len(all_employees))
+
+same_name = employees1 & employees2
+print(same_name, " - This are the same names from both of groups.")
+
+oneof_companies = []
+print("Please, enter the names: ")
+for i in range(6): # len(all_employees))
+    input_name = input()
+    oneof_companies.append(input_name)
+    if input_name == employees1 - employees2:
+        print("They work in one of companies")
+    else:
+        print("No")
 
 
 # 4. Create 2 collections for storing movies that have been watched by 2 persons,
@@ -51,7 +49,6 @@ print(oneof_watcher, " - movies that are watched by at least one of them")
 
 first_watcher = person1 - person2
 print(first_watcher, " - movies that are watched by 1-st and not watched by 2-nd")
-
 
 # 5. Input a collection of employee names with their salary,
 # calculate average salary in organisation,
@@ -97,14 +94,12 @@ for i in range(7):
     check_nums = [num for num in nums if num < i]
 print(check_nums)
 
-
 # 8. Define collection of songs, print indexes for songs starting with ‘s’
 
 songs = ("Wind Of Change", "Stand By Me", "Listen To Your Heart", "Sweet Dreams")
 for i in range(len(songs)):
     if songs[i].startswith('S'):
         print(i)
-
 
 # 9 . Define collection of prices, calculate their sum until meeting negative price
 
@@ -115,7 +110,6 @@ for i in prices:
     if i<0:
         break
     print(sum)
-
 
 # 10. Calculate multiplication of numbers from 0 to inputted value and print it
 
