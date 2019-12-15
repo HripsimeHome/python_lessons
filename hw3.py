@@ -50,7 +50,8 @@ print("The number is greater than 15 and less than 36.") if random_num > 15 and 
 fact_number = int(input("Please, enter a number: "))
 print(math.factorial(fact_number)) if fact_number > 0 < 100 else print ("It is not positive number.")
 
-# 9. Create 2 modules: 1. stores some attributes about a room (color, number, etc.);
+# 9. Create 2 modules:
+# 1. stores some attributes about a room (color, number, etc.);
 # 2. makes some operations on attributes of first module
 
 room_color = "White"
