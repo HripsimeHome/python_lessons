@@ -31,10 +31,10 @@ print("Please, enter the names: ")
 for i in range(6): # len(all_employees))
     input_name = input()
     oneof_companies.append(input_name)
-    if input_name == employees1 - employees2:
-        print("They work in one of companies")
+    if input_name in all_employees:
+        print("He/She works in one of companies.")
     else:
-        print("No")
+        print("He/She does not work in one of companies.")
 
 
 # 4. Create 2 collections for storing movies that have been watched by 2 persons,
@@ -44,7 +44,7 @@ for i in range(6): # len(all_employees))
 person1 = {"Moskva slezam ne verit", "Shinel", "Jestoki romans"}
 person2 = {"Spisok Shinglera", "V jazze tol'ko devushki", "Shinel"}
 
-oneof_watcher = person1 & person2
+oneof_watcher = person1 | person2
 print(oneof_watcher, " - movies that are watched by at least one of them")
 
 first_watcher = person1 - person2

@@ -1,17 +1,18 @@
 import re
 
-#*Input one string, define another one, concatenate them and print the result
+# 1. Input one string, define another one, concatenate them and print the result
 
-print("Please, enter the word and press enter to see concatenation")
+# with input()
+print("Please, enter the word and press enter to see concatenation.")
 string1 = input()
-string2 = " - test for Python concatenation"
+string2 = " - is test for Python concatenation."
 print(string1 + string2)
 
 str1 = "This is my "
 str2 = "homework"
 print(str1 + str2)
 
-#*Define multiline string and print it
+# 2. Define multiline string and print it
 
 multiline1 = '''
  First line
@@ -20,7 +21,6 @@ multiline1 = '''
 '''
 print(multiline1)
 
-
 multiline2 = """
  Fourth line
  Fifth line
@@ -28,48 +28,60 @@ multiline2 = """
 """
 print(multiline2)
 
+# 3. Input a string and get substring from start to some position
 
-#*Input a string and get substring from start to some position
+sub_str = input("Please, enter the word.")
+print(sub_str[0:4])
 
-substring = "homework"
-print(substring[0:4])
-
-
-#*Define a string and get substring of even elements
+# 4. Define a string and get substring of even elements
 
 even = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 print(even[1::2])
 
+# 5. Input a string, print it from start to half if its length is even, otherwise from half to the end
 
-#*Calculate number of  ‘d’ chars in inputed string
+text = input("Please, enter a word: ")
+if (len(text)) % 2 == 0:
+    print(text[:len(text)//2])
+else:
+    print(text[len(text)//2:])
 
-words = "drop down drop down"
+
+# 6. Calculate number of  ‘d’ chars in inputed string
+
+word = input('Please, enter word with several symbol \'d\'.')
 character = "d"
-number = words.count(character)
-print("The number of character d is:", number)
+number = word.count(character)
+print("The number of character \"d\" is:", number)
 
 
-#*Input string of words separated by coma, get number of words and print it
+# 7. Input string of words separated by coma, get number of words and print it
 
 word = "first, second, third, fourth, fifth, sixth, seventh"
 result = len(word.split())
-print ("The number of words are : " + str(result))
+print ("The number of words is : " + str(result))
+
+# with input()
+word = input("Please, enter string of words separated by coma: ")
+result = len(word.split())
+print ("The number of words is : " + str(result))
 
 
-#*Input string, find how many ‘ab’-s are inside
+# 8. Input string, find how many ‘ab’-s are inside
 
-str = "ab ab ab ab ab".count('ab')
-print(str)
-
-
-#Input string and replace all ‘1’ with ‘one’
-
-text = "This is the 1 and other 1"
-txt = text.replace("1", "one")
-print(txt)
+word = input("Please, enter string with \"ab\" symbols:")
+symbol = word.count("ab")
+print(symbol, " \"ab\" - in this string.")
 
 
-#*Define a string with values inside using format() method and print result
+# 9. Input string and replace all ‘1’ with ‘one’
+
+text = input("Please, enter string with \"1\" symbol: ")
+change_text = text.replace("1", "one")
+print(change_text)
+
+
+# 10. Define a string with values inside using format() method and print result
 
 format1 = "We are learning {language} version {version}.".format(language = "Python", version = 3)
 print(format1)
@@ -81,7 +93,7 @@ format3 = "We are learning {} version {}.".format("Python", 3)
 print(format3)
 
 
-#Create a regular expressions to check if string meets some requirements
+# 11. Create a regular expressions to check if string meets some requirements
 
 str = "I am doing homework"
 reg = re.search("^I am doing homework$", str)
@@ -92,7 +104,7 @@ else:
   print("No match")
 
 
-#*Create a regular expression to find occurence of regular expression in strings
+# 12. Create a regular expression to find occurence of regular expression in strings
 
 str = "food good foot moon"
 reg = re.findall("oo*", str)
