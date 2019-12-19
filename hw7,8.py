@@ -15,7 +15,7 @@ print(books)
 # 3. Create 2 collections storing company employees,
 # get number of employees working in both companies,
 # get collection of employees with same name from both of groups,
-# input several names and find if they work in one of companies, print results -
+# input several names and find if they work in one of companies, print results
 
 employees1 = {"Kevin", "Mellisa", "Mike", "William"}
 employees2 = {"William", "Sophia", "Mike", "Isabella"}
