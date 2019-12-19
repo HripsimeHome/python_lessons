@@ -87,12 +87,15 @@ print("Result of multiplication is: ", sum)
 # 7. Input 7 numbers, get the numbers from beginning to the number which is less than number on previous position
 
 nums = []
+check_nums = True
 print("Please, enter 7 numbers: ")
 for i in range(7):
     num = int(input())
-    nums.append(num)
-    check_nums = [num for num in nums if num < i]
-print(check_nums)
+    if nums and num < nums[-1]:
+        check_nums = False
+    if check_nums:
+        nums.append(num)
+print(nums)
 
 # 8. Define collection of songs, print indexes for songs starting with ‘s’
 
