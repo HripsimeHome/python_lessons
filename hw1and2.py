@@ -31,8 +31,8 @@ print("Hello, " + username)
 # 1. containing data about student;
 # 2. using data from first module
 
-import hw1and2_ex5_module
-print(hw1and2_ex5_module.student_info)
+import hw1and2_mod3
+print(hw1and2_mod3.student_info)
 
 # 6. Write a square root calculator that performs for some inputted value
 
@@ -51,11 +51,11 @@ print("Your age is ", age)
 # 2. calculating remainder of some number divided to other number (inputted from console),
 # 3. performing operation from first and second module
 
-import hw1_module1
-print(hw1_module1.result)
+import hw1and2_mod1
+print(hw1and2_mod1.result)
 
-import hw1_module2
-print(hw1_module2.remainder_result)
+import hw1and2_mod2
+print(hw1and2_mod2.remainder_result)
 
 # 9. Write some comments to your code
 
